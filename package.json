@@ -1,0 +1,23 @@
+{
+  "name": "hacker-news",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx pm2-dev server.js",
+    "start": "npx pm2 start server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "express": "^4.19.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "pm2": "^5.3.1"
+  }
+}
