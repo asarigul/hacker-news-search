@@ -14,7 +14,7 @@ Steps:
    mkdir hacker-news 
 
 1. init project (adds package.json)
-    ```
+   ```
    npm init -y
 
 2. install express
