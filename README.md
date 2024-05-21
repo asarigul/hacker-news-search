@@ -11,7 +11,8 @@ https://betterstack.com/community/guides/scaling-nodejs/build-nodejs-application
 Steps:
 0. create project folder
    ```
-   mkdir hacker-news 
+   mkdir hacker-news
+  ```
 
 1. init project (adds package.json)
    ```
