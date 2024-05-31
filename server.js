@@ -8,6 +8,12 @@ app.locals.dateFns = require('date-fns');
 
 const dateFormat = 'LLL dd, yyyy';
 
+app.set('view engine', 'pug');
+// app.set('views', path.join(__dirname, '..', 'views')); // 1 level up
+app.set('views', path.join(__dirname, 'views'));
+
+// add static file handling
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     console.log(`request received for url  ${req.url}`);
@@ -15,13 +21,6 @@ app.get('/', (req, res) => {
         title: 'HomePage'
     });
 });
-
-app.set('view engine', 'pug');
-// app.set('views', path.join(__dirname, '..', 'views')); // 1 level up
-app.set('views', path.join(__dirname, 'views'));
-
-// add static file handling
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/search', async (req, res, next) => {
     const searchQuery = req.query.q;
